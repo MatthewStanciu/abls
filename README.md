@@ -1,5 +1,7 @@
 # AirTable Based Link Shortener
 
+My fork of [@itsmingjie](https://go.mingjie.info)'s Airtable-based link shortener, running on https://mbs.zone.
+
 ## Setup
 
 * Please make a copy of the template AirTable Base: [https://go.mingjie.info/template](https://go.mingjie.info/template)
