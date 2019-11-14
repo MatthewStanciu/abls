@@ -1,0 +1,33 @@
+{
+  "name": "mbs.zone",
+  "build": {
+    "env": {
+      "AIRTABLE_BASE": "@airtable-base",
+      "AIRTABLE_KEY": "@airtable-key",
+      "APP_USER": "@app-user",
+      "APP_SECRET": "@app-secret",
+      "LOGGING": "@logging",
+      "ROOT_REDIRECT": "@root-redirect"
+    }
+  },
+  "env": {
+    "AIRTABLE_BASE": "@airtable-base",
+    "AIRTABLE_KEY": "@airtable-key",
+    "APP_USER": "@app-user",
+    "APP_SECRET": "@app-secret",
+    "LOGGING": "@logging",
+    "ROOT_REDIRECT": "@root-redirect"
+  },
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ]
+}
